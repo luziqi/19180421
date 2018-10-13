@@ -12,8 +12,8 @@ unsigned invert(unsigned short x,int p,int n)
 {
     unsigned short a,b,c;
         a=~0<<(p-1);
-	a=a>>(8-n);
-	a=a<<(9-n-p);
+	a=a>>(16-n);
+	a=a<<(17-n-p);
 	b=~a;
 	a=x&a;
 	a=~a;
