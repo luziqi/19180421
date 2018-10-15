@@ -1,24 +1,19 @@
 #include <stdio.h>
-unsigned invert(unsigned short,int,int);
+unsigned short invert(unsigned short x,int p,int n);
 int main()
 {   
-	unsigned short  x;
+	unsigned short x;
 	int p,n;
 	scanf("%o%d%d",&x,&p,&n);
 	invert(x,p,n);
 	return 0;
 }
-unsigned invert(unsigned short x,int p,int n)
+unsigned short invert(unsigned short x,int p,int n)
 {
-    unsigned short a,b,c;
-        a=~0<<(p-1);
-	a=a>>(16-n);
-	a=a<<(17-n-p);
-	b=~a;
-	a=x&a;
-	a=~a;
-	b=x%b;
-	c=a|b;
-    printf("%o",c);
-	return;
+	int a,b,c;
+    a=~0<<n;
+	b=~a<<(p+1-n);
+	c=x^b;
+	printf("%o\n",c);
+	return  c;
 }
