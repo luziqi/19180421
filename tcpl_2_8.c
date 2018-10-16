@@ -15,6 +15,6 @@ unsigned rightrot(unsigned short x,int n)
 	b=x>>n;
 	b=b|a;
 	printf("%o\n",b);
-	return;
+	return b;
 }
 
