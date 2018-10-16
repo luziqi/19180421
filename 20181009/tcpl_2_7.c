@@ -1,14 +1,14 @@
 #include <stdio.h>
-unsigned short invert(unsigned short x,int p,int n);
+unsigned invert(unsigned x,int p,int n);
 int main()
 {   
-	unsigned short x;
+	unsigned x;
 	int p,n;
 	scanf("%o%d%d",&x,&p,&n);
 	invert(x,p,n);
 	return 0;
 }
-unsigned short invert(unsigned short x,int p,int n)
+unsigned invert(unsigned x,int p,int n)
 {
 	int a,b,c;
     a=~0<<n;
