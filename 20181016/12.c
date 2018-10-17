@@ -1,32 +1,32 @@
 # include <stdio.h>
 int main(void)
 {
-    int a, b, r, x, y;
-
+    int a, b, x,y,yinzi=1,i=2;
     scanf("%d / %d", &a, &b);
-    x = a;
-    y = b;
-    if(a > b)
+    x=a,y=b;
+    if(a>b)
     {
-        while(a != 0)
-      {
-        r = b % a;
-        b = a;
-        a = r; 
+    	while(i<=b)
+    	{if(a%i==0&&b%i==0)
+    	{yinzi=yinzi*i;
+    	a=a/i,b=b/i;
+    	i=i-1;
+		}
+		i++;}
 		
-      }
-        printf("%d / %d", x / b, y / b);
-    }
+	}
     else
     {
-        while(b != 0)
-        {
-        r = a % b;
-        a = b;
-        b = r;
-        }
-        printf("%d / %d", x / a, y / a);
-    }
+    	while(i<=a)
+        {if(a%i==0&&b%i==0)
+    	{yinzi=yinzi*i;
+    	a=a/i,b=b/i;
+    	i=i-1;
+		}
+		i++;}
+			
+	}
+    printf("%d/%d\n",x/yinzi,y/yinzi);
 		 return 0;
     }
    
