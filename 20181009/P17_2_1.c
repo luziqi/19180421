@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-	char r;                   //将r定义为char型变量
-	int i;                    //将i定义为int型变量
-	float x;                  //将x定义为float型变量
-	double z;                 //将z定义为double型变量
-    long int a;               //将a定义为long int型变量
-    signed long int b;        //将b定义为signed long int型变量
-	unsigned int c;           //将c定义为unsigne int型变量
-	unsigned long int d;      //将d定义为unsigned long int型变量
-	short int e;              //将e定义为short int型变量
-	signed short int f;       //将f定义为signed short int型变量
-	unsigned short int g;     //将g定义为unsigned short int型变量
+	char r;                   
+	int i;                  
+	float x;                
+	double z;                 
+    long int a;              
+    signed long int b;        
+	unsigned int c;           
+	unsigned long int d;     
+	short int e;            
+	signed short int f;       
+	unsigned short int g;     
 
 	printf("char size=%d\n",sizeof(r));
     printf("int  size=%d\n",sizeof(i));
