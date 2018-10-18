@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include <stdafx.h>
 
 unsigned  setbits(unsigned x , unsigned y,  int p, int n);
 
