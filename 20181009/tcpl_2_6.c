@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include <stdafx.h>
+=======
+#include <stdio.h>
+>>>>>>> 0a9c49ab10a4aeb8acdc3c518dd9f6a0b9830928
 
 unsigned  setbits(unsigned x , unsigned y,  int p, int n);
 
