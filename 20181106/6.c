@@ -19,16 +19,6 @@ int main()
 	 }
 	 else
 	{
-		return B(n-1)+2+B(n-1);
+		return 3*A(n-1)+2;
 	 } 
   } 
-  
-  int B(int m)
-  {
-  	if(m==1)
-  	{
-  		return 1;
-	  }
-	  else
-	  return A(m-1)+1+B(m-1);
-  }
