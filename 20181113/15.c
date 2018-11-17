@@ -1,14 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 	
-int main()
+int main(int argc,char **argv)
 {
 	char ch;
-	char fname[100];
 	FILE *fp;
-	scanf("%s",fname);
-	
-	if((fp=fopen(fname,"r"))==NULL)
+	if((fp=fopen(argv[1],"r"))==NULL)
 	{
 		exit(1);
 	}

@@ -1,20 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 	
-int main()
+int main(int argc,char** argv)
 {
 	char ch;
-	char fname1[100],fname2[100];
 	FILE *fp1,*fp2;
-	scanf("%s",fname1);
-	scanf("%s",fname2);
 	
-	if((fp1=fopen(fname1,"r"))==NULL)
+	if((fp1=fopen(argv[1],"r"))==NULL)
 	{
 		exit(1);
 	}
 	
-	if((fp2=fopen(fname2,"w"))==NULL)
+	if((fp2=fopen(argv[2],"w"))==NULL)
 	{
 		exit(1);
 	}
