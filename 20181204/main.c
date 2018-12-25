@@ -272,7 +272,7 @@ struct Book* searchISBN(struct Book *head,char isbn[])
 		}
 		p=p->next;
 	}
-        printf("%-30s%-15s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
+        printf("%-35s%-20s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
 	return p;
 }
 void searchname(struct Book *head,char name[])
@@ -314,7 +314,7 @@ void searchname(struct Book *head,char name[])
     }
     else
     { //如果n = 0，找到
-      printf("%-30s%-15s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
+      printf("%-35s%-20s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
       p=p->next;
       return searchname(p,name);
  
@@ -329,7 +329,7 @@ void searchwriter(struct Book *head,char writer[])
 		return;//遍历结束
 	if(strcmp(p->writer,writer)==0)
 	{
-		printf("%-30s%-15s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
+		printf("%-35s%-20s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
 		return;
 	}
 	else
