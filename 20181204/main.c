@@ -330,13 +330,11 @@ void searchwriter(struct Book *head,char writer[])
 	if(strcmp(p->writer,writer)==0)
 	{
 		printf("%-35s%-20s%-10s%-5.2f\n",p->name,p->writer,p->ISBN,p->price);
-		return;
+		
 	}
-	else
-	{
-		p=p->next;
-		return searchwriter(p,writer);
-	}
+	p=p->next;
+	return searchwriter(p,writer);
+	
 }
 void menu()
 {
