@@ -120,7 +120,7 @@ struct Book* readfile()
         FILE *fp = NULL;
 	char *line,*record;
 	char buffer[1024],test[100];
-	if ((fp = fopen("/home/lzq1098004807/19180421/20181204/test.csv", "r")) != NULL)
+	if ((fp = fopen("test.csv", "r")) != NULL)
 	{
 		while ((line = fgets(buffer, sizeof(buffer), fp))!=NULL)//当没有读取到文件末尾时循环继续
 		{
