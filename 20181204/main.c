@@ -246,7 +246,7 @@ void rewritefile(struct Book *head)
 	char price[30];
 	struct Book *p;
 	p=head;
-	if((fp = fopen("/home/lzq1098004807/19180421/20181204/test.csv", "w")) != NULL)
+	if((fp = fopen("test.csv", "w")) != NULL)
 	{
 		while(p!=NULL)
 		{
